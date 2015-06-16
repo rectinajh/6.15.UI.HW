@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>79A980E2-668E-46AC-AB62-1AF4CD540F14</string>
+	<key>IDESourceControlProjectName</key>
+	<string>6.15.UI.HW</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>784BCFDB0F3F40E7ABB88F5EE6613AC2496B85C0</key>
+		<string>https://github.com/rectinajh/6.15.UI.HW.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>6.15.UI.HW.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>784BCFDB0F3F40E7ABB88F5EE6613AC2496B85C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rectinajh/6.15.UI.HW.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>784BCFDB0F3F40E7ABB88F5EE6613AC2496B85C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>784BCFDB0F3F40E7ABB88F5EE6613AC2496B85C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>6.15.UI.HW</string>
+		</dict>
+	</array>
+</dict>
+</plist>

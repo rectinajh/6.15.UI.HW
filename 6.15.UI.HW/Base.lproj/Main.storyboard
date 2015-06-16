@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V7z-kG-0e9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--网络请求-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,9 +17,98 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="网络请求" id="djd-bX-8UK">
+                        <barButtonItem key="leftBarButtonItem" title="POST" id="6hv-n0-CUj">
+                            <connections>
+                                <action selector="sendPostEvent:" destination="BYZ-38-t0r" id="QUY-GV-rfZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="GET" id="3wl-s7-eMx">
+                            <connections>
+                                <action selector="sendGetEvent:" destination="BYZ-38-t0r" id="Rn6-6A-gqI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1736" y="819"/>
+        </scene>
+        <!--网络请求-->
+        <scene sceneID="PT6-Ws-9XY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PEk-QD-D2Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="网络请求" id="el2-Av-UyF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mMg-AO-RK4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Y2Z-a4-EKv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMU-uA-Lus" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="819"/>
+        </scene>
+        <!--网络视图-->
+        <scene sceneID="8Q6-la-1Zf">
+            <objects>
+                <viewController id="xfZ-kv-8vQ" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1MY-IK-ETP"/>
+                        <viewControllerLayoutGuide type="bottom" id="dwB-Iy-0ha"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I39-L0-tEh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="网络视图" id="6mr-un-i8U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTI-ck-i2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736" y="1516"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JzB-3M-afF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="V7z-kG-0e9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6Mq-XN-nD7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PEk-QD-D2Z" kind="relationship" relationship="viewControllers" id="hZJ-CJ-RdB"/>
+                        <segue destination="42T-RQ-pck" kind="relationship" relationship="viewControllers" id="geJ-WZ-wFV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LW5-3o-qkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="1090"/>
+        </scene>
+        <!--网络视图-->
+        <scene sceneID="fM0-2S-uKN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="42T-RQ-pck" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="网络视图" id="6LL-ca-lsP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6YM-DY-zmI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xfZ-kv-8vQ" kind="relationship" relationship="rootViewController" id="E0f-gT-WvG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQn-Aa-XOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="1525"/>
         </scene>
     </scenes>
 </document>
